@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Heny Patel</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome & AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #28a745 !important;
+      border-bottom: 2px solid #28a745;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      margin-bottom: 20px;
+      border: 5px solid white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-primary {
+      background: #28a745;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: #218838;
+      transform: translateY(-3px);
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #333;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #007bff;
+    }
+
+    .card text{
+        color: #666 !important;
+    }
+      ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+  .bg-light {
+            background: #f8f9fa !important;
+        }
+
+
+    footer {
+      background: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #28a745;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #218838;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 80px 0;
+      }
+
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+       .section {
+                padding: 60px 0;
+            }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Heny Patel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container text-center" data-aos="zoom-in">
+      <img src="image2.png" alt="Heny Patel" class="profile-img">
+      <h1>PATEL HENY DINESHBHAI</h1>
+      <p>Fresher | IT Student | Web & Frontend Developer</p>
+      <a href="Heny resume.pdf" download class="btn btn-primary">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        Motivated and detail-oriented BCA student with a strong foundation in computer science and web development.
+        Passionate about creating clean, responsive websites using modern technologies like HTML, CSS, JavaScript,
+        Bootstrap, Node.js, PHP, and MySQL.
+      </p>
+      <p>
+        I enjoy solving real-world problems through creative web interfaces and continuously learning new tools to
+        enhance user experience.
+      </p>
+      <p><strong>Languages:</strong> English, Hindi, Gujarati</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <div class="card-body">
+              <h5 class="card-title">FITTRACK - GYM MANAGEMENT SYSTEM</h5>
+              <p>Gym management system with member registration, classes, and membership plans (admin & user modules).</p>
+              <p><strong>Tech:</strong> HTML, CSS, JS, PHP, MySQL, Bootstrap</p>
+              <a href="https://github.com/henypatel16/FitTrack_Gym_Management_System" class="btn btn-sm btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <div class="card-body">
+              <h5 class="card-title">FRESH2HOME - ONLINE GROCERY SHOP</h5>
+              <p>ASP.NET-based online grocery system with cart, order, and inventory management for admins.</p>
+              <p><strong>Tech:</strong> ASP.NET, C#, SQL Server, HTML, CSS, Bootstrap</p>
+              <a href="https://github.com/henypatel16/Fresh2Home_Online_GroceryShop" class="btn btn-sm btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <div class="card-body">
+              <h5 class="card-title">QUICKBITE - FOOD ORDERING SYSTEM</h5>
+              <p>Food ordering platform with restaurant, menu, and order management system including admin panel.</p>
+              <p><strong>Tech:</strong> HTML, CSS, JS, PHP, MySQL, Bootstrap</p>
+              <a href="https://github.com/henypatel16" class="btn btn-sm btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+ 
+  <section id="skills" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Frameworks</h5>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>ASP.NET</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Languages</h5>
+                    <ul>
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>VB.NET</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Databases / Cloud</h5>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQL Server</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Tools</h5>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Visual Studio</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Soft Skills</h5>
+                    <ul>
+                        <li>Team Collaboration</li>
+                        <li>Leadership</li>
+                        <li>Problem Solving</li>
+                        <li>Disciplined</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+  <!-- Education Section -->
+  <section id="education" class="section bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2>Education & Achievements</h2>
+      <ul>
+        <li><strong>BCA</strong> - SDJ International College (2023–Present, Sem 4, CGPA: 7.18)</li>
+        <li><strong>H.S.C</strong> - Leo School of Science & Commerce (2023, 77.71%)</li>
+        <li><strong>S.S.C</strong> - Sungrace Vidhyalaya (2021, 73.33%)</li>
+      </ul>
+      <h5>Achievements</h5>
+      <ul>
+        <li>Represented Veer Narmad South Gujarat University in Women’s Cricket (2023 & 2024)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container text-left" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:patelheny16@gmail.com">patelheny16@gmail.com</a></p>
+      <p>Phone: <a href="tel:+916351249014">+91 63512 49014</a></p>
+      <p>Address: Krushnakunj Soc., Bhestan, Surat</p>
+        <p>GitHub: <a href="https://github.com/henypatel16">github.com/henypatel16</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/henypatel16">linkedin.com/in/henypatel16</a></p>     
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Heny Patel. All rights reserved.</p>
+    <div>
+      <a href="https://github.com/henypatel16">GitHub</a> |
+      <a href="https://linkedin.com/in/henypatel16">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+
+    // Navbar active state on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) current = section.getAttribute("id");
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
